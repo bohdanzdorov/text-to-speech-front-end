@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "styles.css">
+    <script src="index.js" defer></script>
+</head>
+    
+<body>
+    <div id = "main">
+        <h1 id = "title">Text to speech converter</h1>
+        <br/>
+        <input type="text" id="input" name="fname">
+        <br/>
+        <button type="button" id="button"  style="font-size: 100%; color: #443266; font-family: Lucida Console; ">
+            Synthesize
+        </button>
+    </div>
+    
+    <audio controls id = "audio">
+        <source src="http://speechtotextnode-env.eba-k4eqsyhm.us-east-1.elasticbeanstalk.com/audio" id = "audioSource" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
+</html>
